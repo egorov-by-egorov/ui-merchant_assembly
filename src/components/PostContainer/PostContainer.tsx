@@ -1,5 +1,5 @@
+import { postApi } from '#api/PostAPI';
 import React, { FC, useState } from 'react';
-import { postApi } from '../../services/PostService';
 import PostItem from '../PostItem/PostItem';
 
 const PostContainer: FC = () => {
