@@ -21,6 +21,7 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "jsx": "react-jsx",
+        "types": ["react/next", "react-dom/next"],
         "baseUrl": "./src",
         "paths": {
             "#types/*": ["./types/*"],
