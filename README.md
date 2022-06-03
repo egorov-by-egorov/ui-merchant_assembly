@@ -9,7 +9,7 @@
 ## Чтобы развернуть проект необходимо:
 
 ```sh
-$ git clone https://gitlab.infrastructure.iml.ru:iml/frontend/lk-ecom/ui-merchant.git
+$ git clone https://github.com/egorov-by-egorov/ui-merchant.git
 $ cd ui-merchant
 $ yarn install
 ```
