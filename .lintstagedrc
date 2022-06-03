@@ -1,0 +1,8 @@
+{
+    "**/*.ts?(x)": [
+        "eslint --cache --fix"
+    ],
+    "*.{ts?(x),scss,sass,css}": [
+        "prettier --write"
+    ]
+}

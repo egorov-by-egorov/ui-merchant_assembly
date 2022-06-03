@@ -1,0 +1,25 @@
+server {
+    proxy_max_temp_file_size 0;
+    listen       80;
+    sendfile        on;
+    tcp_nopush     on;
+    tcp_nodelay        on;
+    server_name localhost;
+
+    keepalive_timeout  70;
+
+    root   /var/www/html;
+    location / {
+      try_files $uri $uri/ /index.html;
+      add_header 'ETag' '{{etag}}';
+      add_header 'Cache-Control' 'max-age=0';
+    }
+
+    client_max_body_size 256m;
+    index index.html;
+    
+    location /system/healthcheck {
+      return 200 'OK';
+    }
+
+}
