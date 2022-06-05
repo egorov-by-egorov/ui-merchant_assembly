@@ -26,20 +26,22 @@ module.exports = {
 			filename: '[fullhash].bundle.css',
 		}),
 		new HtmlWebpackPlugin({
-			title: 'New LK',
+			title: 'New LK',                                     
 			template: path.join(__dirname, 'public', 'index.html'),
 		}),
-		new CopyPlugin({
-			patterns: [
-				{
-					from: path.resolve(__dirname, 'public'),
-					to: path.resolve(__dirname, 'build'),
-					globOptions: {
-						ignore: [`${path.resolve(__dirname, 'public')}/index.html`],
-					},
-				},
-			],
-		}),
+
+		// new CopyPlugin({
+		// 	patterns: [
+		// 		{
+		// 			from: path.resolve(__dirname, 'public'),
+		// 			to: path.resolve(__dirname, 'build'),
+		// 			globOptions: {                                                                          // Ошибка!!!
+		// 				ignore: [`${path.resolve(__dirname, 'public')}/index.html`],
+		// 			},
+		// 		},
+		// 	],
+		// }),
+
 	],
 	module: {
 		rules: [

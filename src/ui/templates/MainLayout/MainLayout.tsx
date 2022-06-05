@@ -1,4 +1,5 @@
 import React from 'react';
+import '#ui/templates/MainLayout/style.scss'
 
 interface MainLayoutProps {
     children: React.ReactNode;
@@ -8,7 +9,7 @@ const MainLayout = ( { children }: MainLayoutProps ) => {
 
     return (
         <>
-            <div>
+            <div className='wrapper'>
 
                 {/*<Header />*/ }
                 {/*<Sidebar />*/ }
